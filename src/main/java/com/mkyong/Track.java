@@ -1,29 +1,69 @@
 package com.mkyong;
 
+import java.util.List;
+
 public class Track {
 
-	String title;
-	String singer;
+	String orderno;
+	String gross;
+	List <Products> products;
 
-	public String getTitle() {
-		return title;
+
+
+	public Track(String orderno, String gross, List<Products> products) {
+		super();
+		this.orderno = orderno;
+		this.gross = gross;
+		this.products = products;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+
+
+	public Track() {
+		super();
 	}
 
-	public String getSinger() {
-		return singer;
-	}
 
-	public void setSinger(String singer) {
-		this.singer = singer;
-	}
 
 	@Override
 	public String toString() {
-		return "Track [title=" + title + ", singer=" + singer + "]";
+		return "Order [orderno=" + orderno + ", singer=" + gross + "List of products "+ products+"]";
+	}
+
+
+
+	public String getOrderno() {
+		return orderno;
+	}
+
+
+
+	public void setOrderno(String orderno) {
+		this.orderno = orderno;
+	}
+
+
+
+	public String getGross() {
+		return gross;
+	}
+
+
+
+	public void setGross(String gross) {
+		this.gross = gross;
+	}
+
+
+
+	public List<Products> getProducts() {
+		return products;
+	}
+
+
+
+	public void setProducts(List<Products> products) {
+		this.products = products;
 	}
 
 }
