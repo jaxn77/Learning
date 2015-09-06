@@ -22,6 +22,8 @@ public class JSONService {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Track getTrackInJSON() {
 
+System.out.println("***********GET***************");
+
 		Track track = new Track();
 		List <Products> products = new ArrayList<Products>();
 		products.add(new Products("1","Mobile lumia 720","14000","4"));

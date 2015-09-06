@@ -2,6 +2,10 @@ package com.mkyong;
 
 public class Products {
 	
+	@Override
+	public String toString() {
+		return "Products [product_ID=" + product_ID + ", product_name=" + product_name + "product_price "+ product_price+"]";
+	}
 	
 	public Products() {
 		super();
